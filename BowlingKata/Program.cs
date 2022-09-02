@@ -16,7 +16,7 @@ namespace Bowling
         {
             //menu + loop
             bool gameLoop = true;
-            string restartGame;
+            string? restartGame;
             while (gameLoop == true)
             {
                 //Rolls and does scoreboard
