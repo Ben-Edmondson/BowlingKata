@@ -10,11 +10,8 @@ using System.Runtime.CompilerServices;
 
 namespace Bowling
 {
-
     class Run
     {
-
-
         static void Main(string[] args)
         {
             //menu + loop

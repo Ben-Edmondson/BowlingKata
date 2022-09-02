@@ -8,10 +8,11 @@ namespace Bowling
 {
     public class Scoring
     {
+        //tallies scores including bonuses for strikes/spares
         public static int ScoreFinal(List<int> scores)
         {
             List<int> score = scores;
-            //tallies scores including bonuses for strikes/spares
+
             int scoreOne = 0;
             int scoreTwo = 1;
             int finalScore = 0;
@@ -25,7 +26,6 @@ namespace Bowling
                             case 18:
                                 finalScore = finalScore + (score[18] + (score[20] + score[21]));
                                 break;
-
                             default:
                                 finalScore = finalScore + (score[scoreOne] + (score[scoreTwo + 1] + score[scoreTwo + 3]));
                                 break;

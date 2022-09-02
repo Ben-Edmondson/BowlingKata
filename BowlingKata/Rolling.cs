@@ -13,13 +13,10 @@ namespace Bowling
         public static List<int> RollAll()
         {
             List<int> score = new List<int>();
-
-            //loops 10 times and gives a number
             for (int i = 0; i < 10; i++)
             {
                 int scorePlaceholder = IndividualRoll();
                 score.Add(scorePlaceholder);
-                //check to see if next roll is needed
                 if (scorePlaceholder == 10)
                 {
                     score.Add(0);
@@ -27,9 +24,7 @@ namespace Bowling
                 else
                 {
                     score.Add(SecondRoll(scorePlaceholder));
-
                 }
-
             }
             return score;
         }
@@ -41,6 +36,7 @@ namespace Bowling
             return roll;
 
         }
+
         //Second roll of frame
         public static int SecondRoll(int firstRoll)
         {
