@@ -9,7 +9,6 @@ namespace Bowling
 {
     public class Rolling
     {
-
         public static List<int> RollAll()
         {
             List<int> score = new List<int>();
@@ -32,7 +31,7 @@ namespace Bowling
         public static int IndividualRoll()
         {
             Random r = new Random();
-            int roll = r.Next(0, 10);
+            int roll = r.Next(0, 11);
             return roll;
 
         }
