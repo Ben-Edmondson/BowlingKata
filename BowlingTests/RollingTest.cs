@@ -15,6 +15,7 @@ namespace BowlingTests
             // Assert
             Assert.NotNull(roll);
         }
+        [Test]
         public void IsSecondRollNull()
         {
             // Arrange
