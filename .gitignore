@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/BowlingKata/obj
+/BowlingTests/bin/Debug/net6.0
+/BowlingTests/obj/Debug/net6.0
+/BowlingTests/obj
+/BowlingKata/bin/Debug/net6.0
