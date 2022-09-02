@@ -49,35 +49,30 @@ namespace Bowling
         }
 
         //Writes the scores to the screen
-        public static void ScoreBoard(List<int> finalScores, int finalScore)
-        {
-            int scoreFinal = finalScore;
-            List<int> scoreBoard = finalScores;
-            Console.WriteLine("Your final score will now be calculated..");
-
+        public static List<string> ScoreBoard(List<int> finalScores)
+        { 
+            List<int> scores = finalScores;
+            List<String> scoreBoard = new List<string>();
             int scoreOne = 0;
             int scoreTwo = 1;
             for (int i = 0; i < 10; i++)
             {
-                if (scoreBoard[scoreOne] == 10)
+                if (scores[scoreOne] == 10)
                 {
-                    Console.Write("X");
-
+                    scoreBoard.Add("X");
                 }
-                else if (scoreBoard[scoreOne] + scoreBoard[scoreTwo] == 10)
+                else if (scores[scoreOne] + scores[scoreTwo] == 10)
                 {
-                    Console.Write(scoreBoard[scoreOne] + "/");
+                    scoreBoard.Add(scores[scoreOne].ToString() + "/");
                 }
                 else
                 {
-                    Console.Write(scoreBoard[scoreOne] + "-" + scoreBoard[scoreTwo]);
+                    scoreBoard.Add(scores[scoreOne] + "-" + scores[scoreTwo]);
                 }
-
-                Console.Write(" ");
                 scoreOne = scoreOne + 2;
                 scoreTwo = scoreTwo + 2;
             }
-            Console.WriteLine($"Final Score: {finalScore}");
+            return scoreBoard;
         }
 
     }
