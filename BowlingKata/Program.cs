@@ -34,8 +34,10 @@ namespace Bowling
                 {
                     gameLoop = false;
                 }
+                Console.Clear();
             }
             Console.WriteLine("Thanks for playing!");
+
         }
 
         
