@@ -1,13 +1,6 @@
 ﻿/*
  * Coding Dojo Bowling Kata
  */
-
-
-
-using System;
-using System.Collections;
-using System.Runtime.CompilerServices;
-
 namespace Bowling
 {
     class Program
@@ -37,9 +30,6 @@ namespace Bowling
                 Console.Clear();
             }
             Console.WriteLine("Thanks for playing!");
-
-        }
-
-        
+        } 
     }
 }

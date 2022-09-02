@@ -4,9 +4,8 @@ namespace BowlingTests
 {
     public class RollingTest
     {
-        //test types and if null
         [Test]
-        public void IsRollNull()
+        public void IsRollNotNull()
         {
             // Arrange
             int roll = Rolling.IndividualRoll();
@@ -16,7 +15,7 @@ namespace BowlingTests
             Assert.NotNull(roll);
         }
         [Test]
-        public void IsSecondRollNull()
+        public void IsSecondRollNotNull()
         {
             // Arrange
             int secondRoll = Rolling.SecondRoll(Rolling.IndividualRoll());

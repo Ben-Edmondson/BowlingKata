@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bowling
+﻿namespace Bowling
 {
     public class Scoring
     {
@@ -12,7 +6,6 @@ namespace Bowling
         public static int ScoreFinal(List<int> scores)
         {
             List<int> score = scores;
-
             int scoreOne = 0;
             int scoreTwo = 1;
             int finalScore = 0;
@@ -74,6 +67,5 @@ namespace Bowling
             }
             return scoreBoard;
         }
-
     }
 }
