@@ -14,6 +14,7 @@ namespace BowlingTests
             var actual = Scoring.ScoreFinal(rolls);
 
             // Assert
+            Assert.NotNull(actual);
             Assert.That(actual, Is.EqualTo(result));
         }
 
@@ -27,6 +28,7 @@ namespace BowlingTests
             var actual = Scoring.ScoreFinal(rolls);
 
             // Assert
+            Assert.NotNull(actual);
             Assert.That(actual, Is.EqualTo(result));
         }
 
@@ -40,6 +42,7 @@ namespace BowlingTests
             var actual = Scoring.ScoreFinal(rolls);
 
             // Assert
+            Assert.NotNull(actual);
             Assert.That(result, Is.EqualTo(actual));
         }
 
@@ -53,6 +56,7 @@ namespace BowlingTests
             var actual = Scoring.ScoreFinal(rolls);
 
             // Assert
+            Assert.NotNull(actual);
             Assert.That(actual, Is.EqualTo(result));
         }
         [Test]
@@ -65,6 +69,7 @@ namespace BowlingTests
             var actual = Scoring.ScoreFinal(rolls);
 
             // Assert
+            Assert.NotNull(actual);
             Assert.That(result, Is.EqualTo(actual));
         }
     }
